@@ -4,7 +4,7 @@
 
 2. [Enabling Gdebi](#enabling-the-ability-to-install-from-.deb-files)
 
-3. [Enabling AppImages](#enabling-the-ability-to-install-from -appimage-files)
+3. [Enabling AppImages](#enabling-the-ability-to-install-from-appimage-files)
 
 4. [Firefox](#install-firefox)
 
