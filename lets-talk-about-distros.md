@@ -1,6 +1,12 @@
+## How long has Linux been around?
+
+Linux began in 1991 as a personal project by Finnish student Linus Torvalds _"to create a new free operating system kernel"_. The resulting Linux kernel has been marked by constant growth throughout its history. 
+
+## What's a distro (distribution)?
+
 There are three main “families” of Linux distributions: 
 
-Debian, Red Hat, and SUSE
+**Debian**, **Red Hat**, and **SUSE**
 
 Most other Linux distributions use one of these three distributions as their foundation.  
 
@@ -10,7 +16,7 @@ Let’s take a look at each of these families.
 
 Debian, which dates all the way back to 1993, is one of the oldest Linux distributions still being developed today. Presently, the most popular Debian-based system is **Ubuntu**.
 
-**Ubuntu**, distributed by the UK-based company Canonical, is  one of the most popular Linux distributions available today. It is free  to download, install and use. Ubuntu is packaged in three different editions - *Server, Desktop,* and *Core*.
+**Ubuntu**, distributed by the UK-based company Canonical, is one of the most popular Linux distributions available today. It is free  to download, install and use. Ubuntu is packaged in three different editions - *Server, Desktop,* and *Core*.
 
 The default desktop environment, as of 2019, is Gnome 3. In recent years Ubuntu also supported the Canonical-developed Unity desktop environment as well. The default 
 front-end package manager for Debian distributions is APT.
