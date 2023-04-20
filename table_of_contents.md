@@ -1,6 +1,9 @@
 ### Table of Contents
+
 1.0 Package Management
 1.1 Using the Fedora package manager -- DNF
+
+1.2 Using the Ubuntu package manager -- APT
 1.2 Other Package Tools
 
 ### Introduction
