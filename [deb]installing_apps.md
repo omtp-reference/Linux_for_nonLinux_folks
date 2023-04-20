@@ -24,15 +24,27 @@
 
 12. [VLC](#install-vlc)
 
+---
 
+##### Introduction
 
-##### Enabling the ability to install from .deb files
+In this modern era, many things have changed when it comes to application packaging in Linux. On the Debian/Ubuntu side we've seen dpkg grow in to gdebi and then be "replaced" by apt-get (later shortened to apt). They're all still around at some level, but modern apps like to use "sandboxing" and use package schemas like snap or flatpak. Elementary OS 7 (Horus) went a step further by making nearly all of it's base apps into flatpaks. As an old neckbeard I prefer the old ways a bit more and therefore my order of preference for these will always be Apt<DEB<Flatpak<Snap. My own security conscious brain and the trust/distrust earned by these methods dictates this order.
+
+back to [top](#table-of-contents)
+
+---
+
+##### Enabling the ability to install from .deb files
 
 ```bash
 sudo apt install gdebi-core gdebi
 ```
 
 Now you can either open a `.deb` file with the gdebi GUI from the right-click menu in your file browser, or use `sudo gdebi <filename.deb>` in a terminal window.
+
+back to [top](#table-of-contents)
+
+---
 
 ##### Install Firefox
 
@@ -60,6 +72,10 @@ sudo apt-get update
 sudo apt install firefox
 ```
 
+back to [top](#table-of-contents)
+
+---
+
 ##### Install Vivaldi
 
 ```bash
@@ -68,17 +84,29 @@ wget -c https://downloads.vivaldi.com/stable/vivaldi-stable_5.7.2921.68-1_amd64.
 sudo gdebi vivaldi-stable_5.7.2921.68-1_amd64.deb
 ```
 
+back to [top](#table-of-contents)
+
+---
+
 ##### Install Slack
 
 Download the latest Slack 64-bit `.deb` from https://slack.com/downloads/linux
 
 Open the file with `sudo gdebi <appname>` to install.
 
+back to [top](#table-of-contents)
+
+---
+
 ##### Install Discord
 
 Download the latest Discord 64-bit `.deb` from https://discord.com/api/download?platform=linux&format=deb
 
 Open the file with `sudo gdebi <appname>` to install.
+
+back to [top](#table-of-contents)
+
+---
 
 ##### Install Todoist
 
@@ -101,6 +129,10 @@ wget -c https://electron-dl.todoist.com/linux/Todoist-1.0.0.AppImage
 
 In your file manager right-click on the Todoist AppImage file and choose the `Open with AppImageLauncher` option -- in the modal dialog that pops up choose the `Integrate and Run` option to install and then launch Todoist.
 
+back to [top](#table-of-contents)
+
+---
+
 ##### Install MarkText editor
 
 ```bash
@@ -108,6 +140,10 @@ cd /Downloads
 wget -c https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-amd64.deb
 sudo gdebi marktext-amd64.deb
 ```
+
+back to [top](#table-of-contents)
+
+---
 
 ##### Install Strawberry Music Player
 
@@ -117,7 +153,11 @@ sudo apt update
 sudo apt install strawberry
 ```
 
-##### Install Nicotine
+back to [top](#table-of-contents) 
+
+---
+
+##### Install Nicotine 
 
 Nicotine+ is a SoulSeek client for linux.
 
@@ -131,6 +171,10 @@ sudo apt update
 sudo apt install nicotine
 ```
 
+back to [top](#table-of-contents)
+
+---
+
 ##### Install Zoom
 
 ```bash
@@ -138,6 +182,12 @@ cd ~/Downloads
 wget -c https://zoom.us/client/5.14.2.2046/zoom_amd64.deb
 sudo gdebi zoom_amd64.deb
 ```
+
+back to [top](#table-of-contents)
+
+---
+
+
 
 ##### Install VLC
 
@@ -147,3 +197,5 @@ sudo apt install vlc
 sudo apt install libdvd-pkg
 sudo dpkg-reconfigure libdvd-pkg
 ```
+
+back to [top](#table-of-contents)
