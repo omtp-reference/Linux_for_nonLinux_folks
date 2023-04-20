@@ -1,3 +1,31 @@
+### Table of Contents
+
+1. [Introduction](#introduction)
+
+2. [Enabling Gdebi](@enabling-the-ability-to-install-from-.deb-files)
+
+3. [Firefox](install-firefox)
+
+4. [Vivaldi](install-vivaldi)
+
+5. [Slack](Install Slack)
+
+6. [Discord](install-discord)
+
+7. [Todoist](Install Todoist)
+
+8. [Marktext](install-marktext-editor)
+
+9. [Strawberry](install-strawberry-music-player)
+
+10. [Nicotine+](install-nicotine)
+
+11. [Zoom](install-zoom)
+
+12. [VLC](install-vlc)
+
+
+
 ##### Enabling the ability to install from .deb files
 
 ```bash
@@ -6,7 +34,7 @@ sudo apt install gdebi-core gdebi
 
 Now you can either open a `.deb` file with the gdebi GUI from the right-click menu in your file browser, or use `sudo gdebi <filename.deb>` in a terminal window.
 
-##### Installing Firefox (not a Snap)
+##### Install Firefox
 
 First remove the snap version if it is installed and add the Mozilla PPA so you can get the real Firefox package.
 
@@ -52,9 +80,11 @@ Download the latest Discord 64-bit `.deb` from https://discord.com/api/download?
 
 Open the file with `sudo gdebi <appname>` to install.
 
-##### Install Todoist (AppImage}
+##### Install Todoist
 
-First make sure `AppImageLauncher Settings` is in your Applications menu; if it isn't install it before  installing Todoist.
+Todoist is currently only available as an AppImage.
+
+First, make sure `AppImageLauncher Settings` is in your Applications menu; if it isn't install it before  installing Todoist.
 
 ```bash
 sudo add-apt-repository ppa:appimagelauncher-team/stable
@@ -87,7 +117,9 @@ sudo apt update
 sudo apt install strawberry
 ```
 
-##### Install Nicotine+ (SoulSeek client)
+##### Install Nicotine
+
+Nicotine+ is a SoulSeek client for linux.
 
 There is a `.deb` package available [here](https://github.com/nicotine-plus/nicotine-plus/releases/latest/download/debian-package.zip) but for a proper install that can update if a new client comes out this is the way.
 
