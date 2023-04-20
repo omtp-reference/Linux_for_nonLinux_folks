@@ -8,11 +8,11 @@
 
 4. [Vivaldi](install-vivaldi)
 
-5. [Slack](Install Slack)
+5. [Slack](install-slack)
 
 6. [Discord](install-discord)
 
-7. [Todoist](Install Todoist)
+7. [Todoist](install-todoist)
 
 8. [Marktext](install-marktext-editor)
 
