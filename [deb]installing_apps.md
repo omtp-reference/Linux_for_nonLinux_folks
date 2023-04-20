@@ -1,3 +1,11 @@
+##### Enabling the ability to install from .deb files
+
+```bash
+sudo apt install gdebi-core gdebi
+```
+
+Now you can either open a `.deb` file with the gdebi GUI from the right-click menu in your file browser, or use `sudo gdebi <filename.deb>` in a terminal window.
+
 ##### Installing Firefox (not a Snap)
 
 First remove the snap version if it is installed and add the Mozilla PPA so you can get the real Firefox package.
