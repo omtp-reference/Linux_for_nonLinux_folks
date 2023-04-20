@@ -2,27 +2,27 @@
 
 1. [Introduction](#introduction)
 
-2. [Enabling Gdebi](@enabling-the-ability-to-install-from-.deb-files)
+2. [Enabling Gdebi](#enabling-the-ability-to-install-from-.deb-files)
 
-3. [Firefox](install-firefox)
+3. [Firefox](#install-firefox)
 
-4. [Vivaldi](install-vivaldi)
+4. [Vivaldi](#install-vivaldi)
 
-5. [Slack](install-slack)
+5. [Slack](#install-slack)
 
-6. [Discord](install-discord)
+6. [Discord](#install-discord)
 
-7. [Todoist](install-todoist)
+7. [Todoist](#install-todoist)
 
-8. [Marktext](install-marktext-editor)
+8. [Marktext](#install-marktext-editor)
 
-9. [Strawberry](install-strawberry-music-player)
+9. [Strawberry](#install-strawberry-music-player)
 
-10. [Nicotine+](install-nicotine)
+10. [Nicotine+](#install-nicotine)
 
-11. [Zoom](install-zoom)
+11. [Zoom](#install-zoom)
 
-12. [VLC](install-vlc)
+12. [VLC](#install-vlc)
 
 
 
