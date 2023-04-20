@@ -4,43 +4,63 @@
 
 2. [Enabling Gdebi](#enabling-the-ability-to-install-from-.deb-files)
 
-3. [Firefox](#install-firefox)
+3. [Enabling AppImages](#enabling-the-ability-to-install-from -appimage-files)
 
-4. [Vivaldi](#install-vivaldi)
+4. [Firefox](#install-firefox)
 
-5. [Slack](#install-slack)
+5. [Vivaldi](#install-vivaldi)
 
-6. [Discord](#install-discord)
+6. [Slack](#install-slack)
 
-7. [Todoist](#install-todoist)
+7. [Discord](#install-discord)
 
-8. [Marktext](#install-marktext-editor)
+8. [Todoist](#install-todoist)
 
-9. [Strawberry](#install-strawberry-music-player)
+9. [Marktext](#install-marktext-editor)
 
-10. [Nicotine+](#install-nicotine)
+10. [Strawberry](#install-strawberry-music-player)
 
-11. [Zoom](#install-zoom)
+11. [Nicotine+](#install-nicotine)
 
-12. [VLC](#install-vlc)
+12. [Zoom](#install-zoom)
+
+13. [VLC](#install-vlc)
 
 ---
 
+
+
 ##### Introduction
 
-In this modern era, many things have changed when it comes to application packaging in Linux. On the Debian/Ubuntu side we've seen dpkg grow in to gdebi and then be "replaced" by apt-get (later shortened to apt). They're all still around at some level, but modern apps like to use "sandboxing" and use package schemas like snap or flatpak. Elementary OS 7 (Horus) went a step further by making nearly all of it's base apps into flatpaks. As an old neckbeard I prefer the old ways a bit more and therefore my order of preference for these will always be Apt<DEB<Flatpak<Snap. My own security conscious brain and the trust/distrust earned by these methods dictates this order.
+In this modern era, many things have changed when it comes to application packaging in Linux. On the Debian/Ubuntu side we've seen dpkg grow into gdebi and then be "replaced" by apt-get (later shortened to apt). They're all still around at some level, but modern apps like to use "sandboxing" and therefore use package schemas like snap or flatpak. Elementary OS 7 (Horus) went a step further by making nearly all of it's base apps into flatpaks. As an old neckbeard I prefer the old ways a bit more and therefore my order of preference for these will always be Apt<DEB<AppImage<Flatpak<Snap. My own security conscious brain and the trust/distrust earned by these methods dictates this order.
 
 back to [top](#table-of-contents)
 
 ---
 
-##### Enabling the ability to install from .deb files
+##### Enabling the ability to install from .deb files
 
 ```bash
 sudo apt install gdebi-core gdebi
 ```
 
 Now you can either open a `.deb` file with the gdebi GUI from the right-click menu in your file browser, or use `sudo gdebi <filename.deb>` in a terminal window.
+
+back to [top](#table-of-contents)
+
+---
+
+##### Enabling the ability to install from AppImage files
+
+First, make sure `AppImageLauncher Settings` isn't already in your Applications menu; if it isyou already can use AppImage files as intended.
+
+```bash
+sudo add-apt-repository ppa:appimagelauncher-team/stable
+sudo apt update
+sudo apt install appimagelauncher
+```
+
+Now continue on to download and install the AppImage file as you have been instructed.
 
 back to [top](#table-of-contents)
 
@@ -112,16 +132,6 @@ back to [top](#table-of-contents)
 
 Todoist is currently only available as an AppImage.
 
-First, make sure `AppImageLauncher Settings` is in your Applications menu; if it isn't install it before  installing Todoist.
-
-```bash
-sudo add-apt-repository ppa:appimagelauncher-team/stable
-sudo apt update
-sudo apt install appimagelauncher
-```
-
-Now continue on to download and install Todoist.
-
 ```bash
 cd ~/Downloads
 wget -c https://electron-dl.todoist.com/linux/Todoist-1.0.0.AppImage
@@ -157,7 +167,7 @@ back to [top](#table-of-contents)
 
 ---
 
-##### Install Nicotine 
+##### Install Nicotine
 
 Nicotine+ is a SoulSeek client for linux.
 
@@ -186,8 +196,6 @@ sudo gdebi zoom_amd64.deb
 back to [top](#table-of-contents)
 
 ---
-
-
 
 ##### Install VLC
 
