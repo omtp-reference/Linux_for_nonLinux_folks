@@ -75,4 +75,4 @@ Once you have an understanding of all  of the above, you will be able to narrow 
 
 ---
 
-![](lets-talk-about-distros_assets/8f22ac518c7a1f2c80074fe92df5d742f65c10e5.png)
+<img src="./images/periodic-table-of-distro.png" title="Periodic Tables of Distros" alt="" data-align="center">
