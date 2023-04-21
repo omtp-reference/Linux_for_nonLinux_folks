@@ -32,11 +32,17 @@ The primary three families are `Debian` (and its derivatives), `RedHat` (and its
 
 Smaller families are grouped together under the umbrella of `other-distributions`. These include `Arch`, `Gentoo`, and `Slackware` (and, of course, their derivatives).
 
+
+
+![](./images/periodic-table-of-distro.png)
+
 ---
 
 ##### Making a request for new data
 
-If you find yourself with an issue not yet covered in the currently existing set of documents, feel free to make a 'feature request' on the repository [here](https://github.com/UncleTallest/Linux_for_nonLinux_folks/issues/new/choose).
+If you find yourself with an issue not yet covered in the currently existing set of documents, feel free to make a 'feature request' on the repository [here](https://github.com/UncleTallest/Linux_for_nonLinux_folks/issues/new/choose). Just hit the `Get Started` button show below and follow the instructions. 
+
+![](./images/feature-request.png)
 
 ---
 
