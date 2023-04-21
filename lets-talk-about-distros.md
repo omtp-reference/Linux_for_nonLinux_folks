@@ -73,4 +73,6 @@ with yourself about your level of Linux expertise. Some distributions are easier
 
 Once you have an understanding of all  of the above, you will be able to narrow down your distribution choices, and pick out the system that will be the best fit for you.
 
+---
+
 ![](lets-talk-about-distros_assets/8f22ac518c7a1f2c80074fe92df5d742f65c10e5.png)
