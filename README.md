@@ -36,7 +36,7 @@ Smaller families are grouped together under the umbrella of `other-distributions
 
 ##### Making a request for new data
 
-If you find yourself with an issue not yet covered in the currently existing set of documents, feel free to make a 'feature request' on the repository at https://github.com/UncleTallest/Linux_for_nonLinux_folks/issues/new; be sure to add the `enhancement` label via the little gear at the top of the `labels` section along the right hand side of the screen.
+If you find yourself with an issue not yet covered in the currently existing set of documents, feel free to make a 'feature request' on the repository [here](https://github.com/UncleTallest/Linux_for_nonLinux_folks/issues/new/choose).
 
 ---
 
