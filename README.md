@@ -36,7 +36,7 @@ Smaller families are grouped together under the umbrella of `other-distributions
 
 ##### How to best use this trove of documents?
 
-This entire repository of knowledge is written in Markdown to make a legible, easy-to-read storehouse of information. While they can be read in any text editor, I personally reccommend [Marktext](https://github.com/marktext/marktext) for viewing them as the formatting included within these documents will make them difficult to read in a standard text editor. Installation instructions are available through the link as well as in the `installing_apps.md` file within each distro family subsection of this repository.
+This entire repository of knowledge is written in Markdown to make a legible, easy-to-read storehouse of information. While they can be read in any text editor, I personally recommend [Marktext](https://github.com/marktext/marktext) for viewing them as the formatting included within these documents will make them difficult to read in a standard text editor. Installation instructions are available through the link as well as in the `installing_apps.md` file within each distro family subsection of this repository.
 
 ---
 
