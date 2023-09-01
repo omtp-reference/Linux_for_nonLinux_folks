@@ -73,11 +73,11 @@ Configure as shown:
 
 fig. 1 - configuration (main window)
 
-![](C:\Users\Uncle%20Tallest\Sync\Work\Code\github\omtp-reference\Linux_for_nonLinux_folks\images\barrier\fig1-windows-server.png)
+![](../images/barrier/fig1-windows-server.png)
 
 fig. 2 - settings (Barrier menu)
 
-![](C:\Users\Uncle%20Tallest\Sync\Work\Code\github\omtp-reference\Linux_for_nonLinux_folks\images\barrier\fig2-windows-server.png)
+![](../images/barrier/fig2-windows-server.png)
 
 ##### For the Clients:
 
@@ -87,11 +87,11 @@ Configure as shown:
 
 fig. 1 - configuration (main window)
 
-![](C:\Users\Uncle%20Tallest\Sync\Work\Code\github\omtp-reference\Linux_for_nonLinux_folks\images\barrier\fig1-windows-client.png)
+![](../images/barrier/fig1-windows-client.png)
 
 fig. 2 - settings (Barrier menu)
 
-![](C:\Users\Uncle%20Tallest\Sync\Work\Code\github\omtp-reference\Linux_for_nonLinux_folks\images\barrier\fig2-windows-client.png)
+![](../images/barrier/fig2-windows-client.png)
 
 
 
