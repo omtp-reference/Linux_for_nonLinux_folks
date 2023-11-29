@@ -76,3 +76,7 @@ Once you have an understanding of all  of the above, you will be able to narrow 
 ---
 
 <img src="../images/periodic-table-of-distro.png" title="Periodic Tables of Distros" alt="" data-align="center">
+
+---
+
+return to the [Table of Contents](../pages/projector.html?src=../markdown/table-of-contents.md)

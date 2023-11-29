@@ -42,7 +42,7 @@ This entire repository of knowledge is written in Markdown to make a legible, ea
 
 ##### Making a request for new data
 
-If you find yourself with an issue not yet covered in the currently existing set of documents, feel free to make a 'feature request' on the repository [here](https://github.com/UncleTallest/Linux_for_nonLinux_folks/issues/new/choose). Just hit the `Get Started` button show below and follow the instructions. 
+If you find yourself with an issue not yet covered in the currently existing set of documents, feel free to make a 'feature request' on the repository [here](https://github.com/omtp-reference/Linux_for_nonLinux_folks/issues/new/choose). Just hit the `Get Started` button show below and follow the instructions. 
 
 ![](./images/feature-request.png)
 
