@@ -14,59 +14,34 @@
   </head>
   <body>
     <div class="page">
-      <div id="toc">
-        <h1 class="toc__header">Table of Contents</h1>
-        <a
-          href="./pages/projector.html?src=../markdown/lets-talk-about-distros.md"
-          class="toc__link"
-          >Let's talk about distros</a
-        >
-        <a
-          href="./pages/projector.html?src=../markdown/my-personal-app-preferences.md"
-          class="toc__link"
-          >My personally preferred applications</a
-        >
-        <div class="toc__debian-links">
-            <h2 class="toc__distro-name">Debian and derivatives</h2>
-          <a
-            href="./pages/projector.html?src=../markdown/debian-and-derivatives/package-management.md"
-            class="toc__link"
-            >Understanding package management</a
-          >
-          <a
-            href="./pages/projector.html?src=../markdown/debian-and-derivatives/installing-desktop-apps.md"
-            class="toc__link"
-            >Installing common desktop applications</a
-          >
-          <a
-            href="./pages/projector.html?src=../markdown/debian-and-derivatives/gaming-on-linux.md"
-            class="toc__link"
-            >Gaming on Linux</a
-          >
-          <a
-            href="./pages/projector.html?src=../markdown/debian-and-derivatives/getting-graphics-drivers-sorted.md"
-            class="toc__link"
-            >Getting graphics drivers sorted out</a
-          >
-          <a
-            href="./pages/projector.html?src=../markdown/debian-and-derivatives/controlling-multiple-computers-easily.md"
-            class="toc__link"
-            >Controlling multiple computers easily</a
-          >
-          <a
-            href="./pages/projector.html?src=../markdown/debian-and-derivatives/signing-keys-new-method.md"
-            class="toc__link"
-            >There's a new method for adding GPG signing keys</a
-          >
-          <a
-            href="./pages/projector.html?src=../markdown/debian-and-derivatives/video-editing-tweaks.md"
-            class="toc__link"
-            >Tweaks for Video editing</a
-          >
-        </div>
-      </div>
+      <div id="mdcontainer"></div>
     </div>
   </body>
 
-  <script type="module" src="./scripts/index.js"></script>
+  <script>
+    window.location = "./pages/projector.html?src=../README.md";
+  </script>
+
+  <script>
+    function getQuery(key) {
+      var query = window.location.search.substring(1);
+      var key_values = query.split("&");
+      var params = {};
+      key_values.map(function (key_val) {
+        var key_val_arr = key_val.split("=");
+        params[key_val_arr[0]] = key_val_arr[1];
+      });
+      if (typeof params[key] != "undefined") {
+        return params[key];
+      }
+      return "";
+    }
+
+    window.onload = function () {
+      md = document.createElement("zero-md");
+      md.setAttribute("src", getQuery("src"));
+      md.setAttribute("no-shadow", "");
+      document.getElementById("mdcontainer").append(md);
+    };
+  </script>
 </html>

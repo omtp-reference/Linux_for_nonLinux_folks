@@ -1,34 +1,23 @@
 ### Table of Contents
 
-1. [Introduction](#introduction)
-
-2. 
-
-3. [Firefox](#install-firefox)
-
-4. [Vivaldi](#install-vivaldi)
-
-5. [Slack](#install-slack)
-
-6. [Discord](#install-discord)
-
-7. [Todoist](#install-todoist)
-
-8. [Marktext](#install-marktext-editor)
-
-9. [Strawberry](#install-strawberry-music-player)
-
-10. [Nicotine+](#install-nicotine)
-
-11. [Zoom](#install-zoom)
-
-12. [VLC](#install-vlc)
+- [Table of Contents](#table-of-contents)
+    - [Introduction](#introduction)
+    - [Install Firefox](#install-firefox)
+    - [Install Vivaldi](#install-vivaldi)
+    - [Install Slack](#install-slack)
+    - [Install Discord](#install-discord)
+    - [Install Todoist](#install-todoist)
+    - [Install MarkText editor](#install-marktext-editor)
+    - [Install Strawberry Music Player](#install-strawberry-music-player)
+    - [Install Nicotine](#install-nicotine)
+    - [Install Zoom](#install-zoom)
+    - [Install VLC](#install-vlc)
 
 ---
 
 ##### Introduction
 
-In this modern era, many things have changed when it comes to application packaging in Linux. On the Debian/Ubuntu side we've seen dpkg grow into gdebi and then be "replaced" by apt-get (later shortened to apt). They're all still around at some level, but modern apps like to use "sandboxing" and therefore use package schemas like snap or flatpak. Elementary OS 7 (Horus) went a step further by making nearly all of it's base apps into flatpaks. As an old neckbeard I prefer the old ways a bit more and therefore my order of preference for these will always be Apt<DEB<AppImage<Flatpak<Snap. My own security conscious brain and the trust/distrust earned by these methods dictates this order. See [Package Management](./package-management.md) for more information about `apt`.
+In this modern era, many things have changed when it comes to application packaging in Linux. On the Debian/Ubuntu side we've seen dpkg grow into gdebi and then be "replaced" by apt-get (later shortened to apt). They're all still around at some level, but modern apps like to use "sandboxing" and therefore use package schemas like snap or flatpak. Elementary OS 7 (Horus) went a step further by making nearly all of it's base apps into flatpaks. As an old neckbeard I prefer the old ways a bit more and therefore my order of preference for these will always be `Apt<DEB<AppImage<Flatpak<Snap`. My own security conscious brain and the trust/distrust earned by these methods dictates this order. See [Package Management](./package-management.md) for more information about `apt`.
 
 back to [top](#table-of-contents)
 
@@ -43,7 +32,7 @@ sudo snap remove firefox
 sudo add-apt-repository ppa:mozillateam/ppa
 ```
 
-Next, alter the Firefox package priority to ensure the PPA/deb/apt version of Firefox is preferred. 
+Next, alter the Firefox package priority to ensure the PPA/deb/apt version of Firefox is preferred.
 
 ```bash
 echo '
@@ -131,7 +120,7 @@ sudo apt update
 sudo apt install strawberry
 ```
 
-back to [top](#table-of-contents) 
+back to [top](#table-of-contents)
 
 ---
 
