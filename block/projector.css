@@ -5,14 +5,19 @@
 }
 
 .page {
+  margin: 40px auto 40px;  
   max-width: 80vw;
   max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.header__readme {}
 
 .toc {
   font-family: "Roboto Regular, Arial, sans-serif";
   width: 70%;
-  margin: 0 auto;
   padding: 24px;
   display: flex;
   flex-direction: column;
