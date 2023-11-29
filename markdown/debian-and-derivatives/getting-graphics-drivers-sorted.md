@@ -10,7 +10,7 @@ sudo apt install software-properties-common
 
 ##### Step 2 – Download and Install Latest GPU Drivers
 
-###### Nvidia Hardware
+##### Nvidia Hardware
 
 Open a Terminal window and run the following commands in sequence:
 
@@ -22,7 +22,9 @@ sudo apt install nvidia-driver-455
 sudo apt install libvulkan1 libvulkan1:i386
 ```
 
-Reboot the computer to apply the settings.
+<mark>IMPORTANT:</mark>  DO NOT reboot the computer until you verify that the proper kernel headers were installed to properly build the nvidia kernel modules.
+
+###### Verifying kernel headers are installed to build modules
 
 <mark>IMPORTANT:</mark>  *As of 25Apr2023, upgrading to a new kernel under Ubuntu 22.04 does not succeed at rebuilding dkms modules during the upgrade because apt sees the linux-headers are an 'optional' install target. So if you upgrade your kernel, check the name of the kernel just installed and make sure to install the matching kernel headers; installing the headers for the new kernel will automatically successfully rebuild the dkms modules for the new kernel as part of the process of installing the correct linux-header package.*
 
@@ -41,11 +43,11 @@ ii  linux-image-generic-hwe-22.04              5.19.0.41.42~22.04.14            
 
 *so I would type* 
 
-`sudo apt install linux-headers-5.19.0-38-generic` 
+`sudo apt install linux-headers-5.19.0-41-generic` 
 
-*and reboot to use the new kernel and nvidia drivers.*
+*now you may reboot to use the new kernel AND new nvidia drivers.*
 
-###### AMD / Intel Hardware
+##### AMD / Intel Hardware
 
 Open a Terminal window and run the following commands in sequence:
 
