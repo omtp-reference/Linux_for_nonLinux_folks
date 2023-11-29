@@ -48,5 +48,5 @@ If you find yourself with an issue not yet covered in the currently existing set
 
 ---
 
-continue on to the [Table of Contents](../pages/projector.html?src=../markdown/table-of-contents.md)
+continue on to the [Table of Contents](./pages/projector.html?src=../markdown/table-of-contents.md)
 
