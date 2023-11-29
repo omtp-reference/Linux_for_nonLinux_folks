@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype"),
+    url(../fonts/Roboto-Regular-webfont.woff) format("woff");
+}
+
+.page {
+  max-width: 80vw;
+  max-height: 100vh;
+}
+
+.toc {
+  font-family: "Roboto Regular, Arial, sans-serif";
+  width: 70%;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toc__header {
+  font-size: 36px;
+  font-family: "Roboto Regular, Arial, sans-serif";
+}
+
+.toc__link {
+  display: block;
+  font-size: 24px;
+  font-family: "Roboto Regular, Arial, sans-serif";
+}
+
+#mdcontainer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 24px;
+}

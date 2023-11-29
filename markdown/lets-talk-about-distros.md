@@ -75,4 +75,4 @@ Once you have an understanding of all  of the above, you will be able to narrow 
 
 ---
 
-<img src="./images/periodic-table-of-distro.png" title="Periodic Tables of Distros" alt="" data-align="center">
+<img src="../../images/periodic-table-of-distro.png" title="Periodic Tables of Distros" alt="" data-align="center">

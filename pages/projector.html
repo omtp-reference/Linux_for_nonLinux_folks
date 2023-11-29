@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linux for nonLinux folks</title>
+    <link rel="stylesheet" href="../block/projector.css" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+    ></script>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="page">
+      <div id="mdcontainer"></div>
+    </div>
+  </body>
+
+  <script>
+    function getQuery(key) {
+      var query = window.location.search.substring(1);
+      var key_values = query.split("&");
+      var params = {};
+      key_values.map(function (key_val) {
+        var key_val_arr = key_val.split("=");
+        params[key_val_arr[0]] = key_val_arr[1];
+      });
+      if (typeof params[key] != "undefined") {
+        return params[key];
+      }
+      return "";
+    }
+
+    window.onload = function () {
+      md = document.createElement("zero-md");
+      md.setAttribute("src", getQuery("src"));
+      md.setAttribute("no-shadow", "");
+      document.getElementById("mdcontainer").append(md);
+    };
+  </script>
+</html>
