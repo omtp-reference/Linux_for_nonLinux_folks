@@ -7,4 +7,4 @@
 7. [Tweaks for Video editing](../pages/projector.html?src=../markdown/debian-and-derivatives/video-editing-tweaks.md)
 
 ---
-[return to main Table of Contents](../../pages/projector.html?src=../markdown/table-of-contents.md)
+return to the [Table of Contents](../../pages/projector.html?src=../markdown/table-of-contents.md)
