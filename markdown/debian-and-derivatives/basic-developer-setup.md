@@ -1,13 +1,21 @@
 # Basic Developer Workstation Setup
+
 ---
+
 ### Project 0
+
 ---
+
 ##### Install VS Code
+
 [Running Visual Studio Code on Linux](https://code.visualstudio.com/docs/setup/linux)
 
 ### Project 8
+
 ---
+
 ##### Install Node using NVM
+
 Another way of installing Node.js that is particularly flexible is to use nvm, the Node Version Manager. This piece of software allows you to install and maintain many different independent versions of Node.js, and their associated Node packages, at the same time.
 
 To install NVM on your Ubuntu 22.04 machine, visit the project’s GitHub page. Copy the curl command from the README file that displays on the main page. This will get you the most recent version of the installation script.
@@ -29,7 +37,8 @@ Now, you can ask NVM which versions of Node are available:
     `nvm list-remote`
 
 Output
-``` bash
+
+```bash
        v16.11.1
        v16.12.0
        v16.13.0   (LTS: Gallium)
@@ -56,6 +65,7 @@ You can see the different versions you have installed by typing:
     `nvm list`
 
 Output
+
 ```
 ->     v16.14.0
 default -> v16.14.0
@@ -82,7 +92,8 @@ You can install a release based on these aliases as well. For instance, to insta
     `nvm install lts/fermium`
 
 Output
-``` bash
+
+```bash
 Downloading and installing node v14.19.0...
 Downloading https://nodejs.org/dist/v14.19.0/node-v14.19.0-linux-x64.tar.xz...
 ################################################################################# 100.0%
@@ -96,21 +107,46 @@ You can verify that the install was successful using the same technique from the
     `node -v`
 
 Output
-``` bash
+
+```bash
 v14.19.0
 ```
 
 The correct version of Node is installed on our machine as we expected. A compatible version of npm is also available.
 
 ### Project 12
+
 ---
+
 ##### Install Postman VS Code extension
+
 There is no standard way to install Postman across all distribution so I prefer the VS Code extension that allows you to run Postman from inside VS Code. Just install the Postman VS Code extension and sign-in in the sidebar.
 
 ##### Install MongoDB
-``` bash
+
+```bash
 wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc |  gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg > /dev/null
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
 sudo apt update
 sudo apt install mongodb-org
+```
+
+##### Install MongoDB Compass
+
+Download MongoDB Compass
+
+```
+wget https://downloads.mongodb.com/compass/mongodb-compass_1.43.0_amd64.deb
+```
+
+Install MongoDB Compass
+
+```
+sudo dpkg -i mongodb-compass_1.43.0_amd64.deb
+```
+
+Start MongoDB Compass
+
+```
+mongodb-compass
 ```
