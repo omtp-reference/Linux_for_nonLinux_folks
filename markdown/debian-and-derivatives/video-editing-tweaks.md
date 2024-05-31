@@ -1,3 +1,5 @@
+### Video Editing Tweaks
+
 #### Install and setup OBS Studio
 
 The most recent version of OBS Studio is available as a flatpak in the Elementary OS App Center or can also be installed from [OBS Studio | Flathub](https://flathub.org/apps/com.obsproject.Studio). 
@@ -59,3 +61,16 @@ Once all missing libraries are installed, rerun the Davinci installer.
 ```bash
 sudo ./DaVinci_Resolve_18.5_Linux.run -i
 ```
+#### Getting access to play BluRay discs in video apps
+
+You need two files:
+The first is just a download and copy ->
+http://fvonline-db.bplaced.net/fv_download.php?lang=eng
+
+This goes in `~/.config/aacs/.`
+
+The second step is to run `sudo apt install libaacs`.
+
+If your Bluray is only using AACS encryption these first two steps will get them playing on Linux.
+
+If no then you need to download and compile `libbdplus` and also make sure that a full JRE (Jave Runtime Environment) is installed. See ()[https://www.videolan.org/developers/libbdplus.html] and ()[]
