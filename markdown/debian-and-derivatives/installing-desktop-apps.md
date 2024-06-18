@@ -1,17 +1,18 @@
 ### Table of Contents
 
 - [Table of Contents](#table-of-contents)
-    - [Introduction](#introduction)
-    - [Install Firefox](#install-firefox)
-    - [Install Vivaldi](#install-vivaldi)
-    - [Install Slack](#install-slack)
-    - [Install Discord](#install-discord)
-    - [Install Todoist](#install-todoist)
-    - [Install MarkText editor](#install-marktext-editor)
-    - [Install Strawberry Music Player](#install-strawberry-music-player)
-    - [Install Nicotine](#install-nicotine)
-    - [Install Zoom](#install-zoom)
-    - [Install VLC](#install-vlc)
+  - [Introduction](#introduction)
+  - [Install Firefox](#install-firefox)
+  - [Install LibreWolf](#install-librewolf)
+  - [Install Vivaldi](#install-vivaldi)
+  - [Install Slack](#install-slack)
+  - [Install Discord](#install-discord)
+  - [Install Todoist](#install-todoist)
+  - [Install MarkText editor](#install-marktext-editor)
+  - [Install Strawberry Music Player](#install-strawberry-music-player)
+  - [Install Nicotine](#install-nicotine)
+  - [Install Zoom](#install-zoom)
+  - [Install VLC](#install-vlc)
 
 ---
 
@@ -47,6 +48,36 @@ Now update your sources and install Firefox normally.
 ```bash
 sudo apt-get update
 sudo apt install firefox
+```
+
+back to [top](#table-of-contents)
+
+---
+
+##### Install LibreWolf
+
+LibreWolf is a custom version of Firefox, focused on privacy, security and freedom.
+[LibreWolf](https://librewolf.net/)
+
+```bash
+sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
+
+distro=$(if echo " una bookworm vanessa focal jammy bullseye vera uma " | grep -q " $(lsb_release -sc) "; then lsb_release -sc; else echo focal; fi)
+
+wget -O- https://deb.librewolf.net/keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/librewolf.gpg
+
+sudo tee /etc/apt/sources.list.d/librewolf.sources << EOF > /dev/null
+Types: deb
+URIs: https://deb.librewolf.net
+Suites: $distro
+Components: main
+Architectures: amd64
+Signed-By: /usr/share/keyrings/librewolf.gpg
+EOF
+
+sudo apt update
+
+sudo apt install librewolf -y
 ```
 
 back to [top](#table-of-contents)
