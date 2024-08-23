@@ -20,13 +20,18 @@ sudo zpool status # should show the pool status
 
 If you see the error below while installing nvidia-driver-525 or newer, do the steps below the error message:
 
+
+
 ```bash
 dpkg: error processing package nvidia-dkms-525(--configure):
  installed nvidia-dkms-525 package post-installation script subprocess returned error exit status 10
 
 Examining the /var/lib/dkms/nvidia/525.78.01/build/make.log reveals multiple
 cc: error: unrecognized command-line option ‘-ftrivial-auto-var-init=zero’
+
 ```
+
+That `-ftrivial-auto-var-init=zero` option is only present in gcc-12 so let's fix that.
 
 ```bash
 sudo apt-get purge *nvidia* && sudo apt-get autoremove
