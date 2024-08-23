@@ -26,7 +26,6 @@ dpkg: error processing package nvidia-dkms-525(--configure):
 
 Examining the /var/lib/dkms/nvidia/525.78.01/build/make.log reveals multiple
 cc: error: unrecognized command-line option ‘-ftrivial-auto-var-init=zero’
-
 ```
 
 ```bash
@@ -38,12 +37,24 @@ sudo apt-get install nvidia-driver-525 # or whichever version you want
 
 ##### Desktop Setup Steps
 
-This document will detail the steps neccessary to get my desktop up and running without losing any data from my extra drives.
+First, we need to install a better apt replacement called nala
+
+```bash
+sudo apt install nala
+# or
+curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
+```
 
 #### Activate the beta flathub repo
 
 ```bash
 flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+```
+
+###### Get Flatseal for changing flatpak permissions
+
+```bash
+flatpak install flathub com.github.tchx84.Flatseal
 ```
 
 ##### Zen Browser
@@ -130,8 +141,6 @@ flatpak install flathub com.valvesoftware.SteamLink
 flatpak install flathub com.valvesoftware.Steam
 ```
 
-
-
 ##### Xenia Manager
 
 ```bash
@@ -150,4 +159,4 @@ flatpak install flathub io.github.prateekmedia.appimagepool
 flatpak install flathub it.mijorus.gearlever
 ```
 
-
+ PCSX2
