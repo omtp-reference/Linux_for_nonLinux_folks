@@ -20,6 +20,7 @@ sudo dpkg --add-architecture i386
 sudo apt update  
 sudo apt install nvidia-driver-455  
 sudo apt install libvulkan1 libvulkan1:i386
+sudo apt install libnvidia-egl-wayland1
 ```
 
 <mark>IMPORTANT:</mark>  DO NOT reboot the computer until you verify that the proper kernel headers were installed to properly build the nvidia kernel modules.
