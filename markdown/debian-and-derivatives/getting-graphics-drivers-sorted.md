@@ -27,7 +27,9 @@ sudo apt install libnvidia-egl-wayland1
 
 ###### Verifying kernel headers are installed to build modules
 
-<mark>IMPORTANT:</mark>  *As of 25Apr2023, upgrading to a new kernel under Ubuntu 22.04 does not succeed at rebuilding dkms modules during the upgrade because apt sees the linux-headers are an 'optional' install target. So if you upgrade your kernel, check the name of the kernel just installed and make sure to install the matching kernel headers; installing the headers for the new kernel will automatically successfully rebuild the dkms modules for the new kernel as part of the process of installing the correct linux-header package.*
+<mark>IMPORTANT:</mark>  ~~*As of 25Apr2023, upgrading to a new kernel under Ubuntu 22.04 does not succeed at rebuilding dkms modules during the upgrade because apt sees the linux-headers are an 'optional' install target.~~ _**Fixed in Noble** so this is safe to ignore if you see apt build the kernel modules_ 
+
+So if you upgrade your kernel, check the name of the kernel just installed and make sure to install the matching kernel headers; installing the headers for the new kernel will automatically successfully rebuild the dkms modules for the new kernel as part of the process of installing the correct linux-header package.*
 
 ```bash
 dpkg --list | grep linux-image-
