@@ -8,6 +8,8 @@ src = "."
 site-url = "/Linux_for_nonLinux_folks/"
 git-repository-url = "https://github.com/omtp-reference/Linux_for_nonLinux_folks"
 edit-url-template = "https://github.com/omtp-reference/Linux_for_nonLinux_folks/edit/main/{path}"
+default-theme = "ayu"
+preferred-dark-theme = "coal"
 
 [build]
 build-dir = "book"
