@@ -1,0 +1,13 @@
+[book]
+title = "Linux for nonLinux Folks"
+authors = ["Jerry Jackson"]
+language = "en"
+src = "."
+
+[output.html]
+site-url = "/Linux_for_nonLinux_folks/"
+git-repository-url = "https://github.com/omtp-reference/Linux_for_nonLinux_folks"
+edit-url-template = "https://github.com/omtp-reference/Linux_for_nonLinux_folks/edit/main/{path}"
+
+[build]
+build-dir = "book"
